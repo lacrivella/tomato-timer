@@ -12,7 +12,7 @@ function Timer({ mode, time }) {
 
 Timer.propTypes = {
   mode: PropTypes.string.isRequired,
-  time: PropTypes.string.isRequired
+  time: PropTypes.number.isRequired
 };
 
 export default Timer;

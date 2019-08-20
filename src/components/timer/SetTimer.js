@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 function SetTimer({ type, addMinutes, subMinutes, minuteAmount }) {
   return (
     <section>
-      <p>{type} Length</p>
+      <p>{type} length</p>
       <div>
         <div>{minuteAmount}</div>
-        <button onClick={addMinutes}>↟</button>
-        <button onClick={subMinutes}>↡</button>
+        <button name={type} onClick={addMinutes}>↟</button>
+        <button name={type} onClick={subMinutes}>↡</button>
       </div>
     </section>
   );
@@ -16,7 +16,7 @@ function SetTimer({ type, addMinutes, subMinutes, minuteAmount }) {
 
 SetTimer.propTypes = {
   type: PropTypes.string.isRequired,
-  minuteAmount: PropTypes.string.isRequired,
+  minuteAmount: PropTypes.number.isRequired,
   addMinutes: PropTypes.func.isRequired,
   subMinutes: PropTypes.func.isRequired,
 };

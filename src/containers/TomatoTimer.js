@@ -11,8 +11,9 @@ export default class TomatoTimer extends Component {
     break: 5,
     session: 25,
     minuteAmount: 5,
-    time: 5,
-    startOrStop: 'Start'
+    time: 25,
+    startOrStop: 'Start',
+    interval: null
   };
 
   //resetClick, startStopClick,
@@ -35,16 +36,24 @@ export default class TomatoTimer extends Component {
   }
 
   startStopClick = event => {
-    setInterval(() => {
-      if(this.state.time === 0) {
-        clearInterval();
-      }
-      this.setState({ time: this.state.time - 1 });
-      console.log(this.state.time);
-    }, 1000);
+    if(this.state.interval) {
+      clearInterval(this.state.interval);
+      this.setState({ interval: null });
+    } else {
+      const timer = setInterval(() => {
+        if(this.state.time === 1) {
+          clearInterval(this.state.interval);
+          this.setState({ interval: null });
+        }
+        this.setState({ time: this.state.time - 1 });
+      }, 1000);
+      this.setState({ interval: timer });
+    }
   }
 
-  
+  resetClick = event => {
+    //reset to time amount
+}
 
   render() {
     return (
@@ -63,10 +72,12 @@ export default class TomatoTimer extends Component {
         subMinutes={this.subMinutesHandle} />
 
       <Timer 
-        time={this.state[this.state.type]}
+        time={this.state.time}
         mode={this.state.type} />
 
-      <Control startStopClick={this.startStopClick}/>
+      <Control 
+        startStopClick={this.startStopClick}
+        startOrStop={this.state.startOrStop}/>
       
     </>
     );

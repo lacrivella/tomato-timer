@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './SetTimer.css';
 
 function SetTimer({ type, addMinutes, subMinutes, minuteAmount }) {
   return (
-    <section>
+    <section className={styles.SetTimer}>
       <p>{type} length</p>
       <div>
         <div>{minuteAmount}</div>

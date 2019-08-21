@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Lekton|Pacifico&display=swap');
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #ea5e57;
+  font-family: 'Pacifico', cursive;
+  font-size: 6vh;
+  
+  h1 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+}

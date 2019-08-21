@@ -52,7 +52,7 @@ export default class TomatoTimer extends Component {
   }
 
   resetClick = event => {
-    //reset to time amount
+    
 }
 
   render() {
@@ -77,7 +77,8 @@ export default class TomatoTimer extends Component {
 
       <Control 
         startStopClick={this.startStopClick}
-        startOrStop={this.state.startOrStop}/>
+        startOrStop={this.state.startOrStop}
+        resetClick={this.resetClick} />
       
     </>
     );

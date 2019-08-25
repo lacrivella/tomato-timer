@@ -8,8 +8,8 @@ function SetTimer({ type, addMinutes, subMinutes, minuteAmount }) {
       <p>{type} length</p>
       <div>
         <div>{minuteAmount}</div>
-        <button name={type} onClick={addMinutes}>↟</button>
-        <button name={type} onClick={subMinutes}>↡</button>
+        <button name={type} onClick={addMinutes}>⤴</button>
+        <button name={type} onClick={subMinutes}>⤵</button>
       </div>
     </section>
   );

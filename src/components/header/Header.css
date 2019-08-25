@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lekton|Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Questrial&display=swap');
 
 .Header {
   display: flex;
@@ -11,6 +11,10 @@
   h1 {
     margin-bottom: 0px;
     margin-top: 0px;
+}
+
+img {
+  height: 4rem;
 }
 
 }

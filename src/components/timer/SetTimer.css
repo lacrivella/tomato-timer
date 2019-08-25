@@ -1,5 +1,39 @@
-@import url('https://fonts.googleapis.com/css?family=Lekton|Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Questrial&display=swap');
 
 .SetTimer {
-  font-family: 'Lekton', sans-serif;
+  font-family: 'Questrial', sans-serif;
+  display: inline-grid;
+  align-self: center;
+  text-align: center;
+  margin-inline-end: 15%;
+  margin-inline-start: 20%;
+  border: 1px solid black;
+
+  button {
+  -moz-box-shadow: 0px 10px 14px -7px #cf866c;
+	-webkit-box-shadow: 0px 10px 14px -7px #cf866c;
+	box-shadow: 0px 10px 14px -7px #cf866c;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ea5e57), color-stop(1, #bc3315));
+	background:-moz-linear-gradient(top, #ea5e57 5%, #bc3315 100%);
+	background:-webkit-linear-gradient(top, #ea5e57 5%, #bc3315 100%);
+	background:-o-linear-gradient(top, #ea5e57 5%, #bc3315 100%);
+	background:-ms-linear-gradient(top, #ea5e57 5%, #bc3315 100%);
+	background:linear-gradient(to bottom, #ea5e57 5%, #bc3315 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ea5e57', endColorstr='#bc3315',GradientType=0);
+	background-color:#ea5e57;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+  border-radius:8px;
+  border: none;
+	display:inline-block;
+	cursor:pointer;
+  color: #8cd4a2;
+	font-family:Arial;
+	font-weight:bold;
+	padding:5px 10px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #854629;
+  margin-right: 2px;
+  }
+
 }
